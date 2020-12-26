@@ -28,7 +28,8 @@ export default function Task({
 
       <div className="actions" onClick={(event) => event.stopPropagation()}>
         {state !== "TASK_ARCHIVED" && (
-          <a href="#!" onClick={() => onPinTask(id)}>
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+          <a onClick={() => onPinTask(id)}>
             <span className={`icon-star`} />
           </a>
         )}
