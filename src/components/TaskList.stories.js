@@ -6,7 +6,7 @@ import * as TaskStories from "./Task.stories";
 const taskListStories = {
   component: PureTaskList,
   title: "TaskList",
-  decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
+  decorators: [(Story) => <div style={{ padding: "3rem" }}><Story/></div>],
 };
 export default taskListStories;
 

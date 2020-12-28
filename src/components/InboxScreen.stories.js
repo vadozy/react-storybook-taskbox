@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-//import { action } from "@storybook/addon-actions";
+import { action } from "@storybook/addon-actions";
 import { PureInboxScreen } from "./InboxScreen";
 import * as TaskListStories from "./TaskList.stories";
 
@@ -10,7 +10,7 @@ const store = {
     tasks: TaskListStories.Default.args.tasks,
   }),
   subscribe: () => 0,
-  dispatch: () => 0, // action("dispatch"),
+  dispatch: action("dispatch"),
 };
 
 const inboxScreenStories = {
